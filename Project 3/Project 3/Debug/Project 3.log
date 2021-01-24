@@ -1,0 +1,13 @@
+﻿  Enemy.cpp
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Object.h(21,27): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(104,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(104,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(131,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(131,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(145,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(145,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Project 3.vcxproj -> C:\Users\Celespica\Desktop\Project 3\Project 3\Debug\Project 3.exe
