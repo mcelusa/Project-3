@@ -3,6 +3,7 @@
 #include "Object.h"
 #include "Enemy.h"
 #include "Camera.h"
+#include "Collision.h"
 #include <vector>
 
 class Scene
@@ -22,6 +23,8 @@ private:
 
 	std::vector<Enemy*> enemys;
 	std::vector<Object*> objects;
+
+	Collision* collision;
 
 	bool isStart;
 

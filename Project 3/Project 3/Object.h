@@ -1,5 +1,6 @@
 #pragma once
 #include "Particle.h"
+#include "Constant.h"
 #include <vector>
 
 using namespace std;

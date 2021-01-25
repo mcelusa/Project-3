@@ -4,7 +4,7 @@
 #include "DxLib.h"
 #include "Input.h"
 
-#define PI 3.1415
+
 
 bool LoopHole::teleportPlayer = false;
 int LoopHole::teleX = 0;

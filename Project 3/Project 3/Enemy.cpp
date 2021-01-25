@@ -19,6 +19,11 @@ void Enemy::OnCollision()
 {
 }
 
+bool Enemy::CheckPlayer(float targetX, float targetY)
+{
+	return false;
+}
+
 ExplodingEnemy::ExplodingEnemy(float x, float y)
 {
 
@@ -92,7 +97,7 @@ void ExplodingEnemy::Draw()
 		
 	}
 	else {
-		rateX = 0;
+		rateX = 0; 
 		rateY = 0;
 	}
 	
@@ -184,4 +189,134 @@ void ExplodingEnemy::OnCollision()
 	
 }
 
+PatrolEnemy::PatrolEnemy(float x, float y)
+{
 
+	this->x = x;
+	this->y = y;
+	this->size = 20;
+	this->angle = 0;
+	this->graph = LoadGraph("Images/Enemy.png");
+	line1 = new Line(x, y, angle + 30);
+	line2 = new Line(x, y, angle - 30);
+	playerInRange = false;
+
+}
+
+void PatrolEnemy::Update()
+{
+	if (!playerInRange)
+	{
+		angle += 30 * DELTATIME;
+		if (angle > 360 * PI)
+		{
+			angle = 0;
+		}
+	}
+	
+
+	line1->SetAngle(angle + 30);
+	line2->SetAngle(angle - 30);
+	line1->Update();
+	line2->Update();
+
+	
+
+}
+
+void PatrolEnemy::Draw()
+{
+
+	float cam = Camera::GetX();
+	float camY = Camera::GetY();
+
+	DrawRotaGraph(x- cam, y - camY, 0.5, angle, graph, true);
+
+	if (playerInRange)
+	{
+		SetDrawBright(255, 0, 0);
+		DrawRotaGraph(x - cam, y - camY, 0.5, angle * PI / 180, graph, true);
+		SetDrawBright(255, 255, 255);
+	}
+
+	line1->Draw();
+	line2->Draw();
+
+
+
+}
+
+bool PatrolEnemy::CheckPlayer(float targetX, float targetY)
+{
+
+	if (CheckLine1(targetX, targetY) && CheckLine2(targetX, targetY))
+	{
+		return true;
+	}
+		
+
+}
+
+bool PatrolEnemy::CheckLine1(float targetX, float targetY)
+{
+	
+	float a = (targetX - line1->GetX()) * (line1->GetY1() - line1->GetY());
+	float b = (targetY - line1->GetY()) * (line1->GetX1() - line1->GetX());
+	float c = a - b;
+	DrawFormatString(0, 60, GetColor(255, 0, 0), "%f", c);
+	if (c > 0) return true;
+}
+
+bool PatrolEnemy::CheckLine2(float targetX, float targetY)
+{
+	float a = (targetX - line2->GetX()) * (line2->GetY1() - line2->GetY());
+	float b = (targetY - line2->GetY()) * (line2->GetX1() - line2->GetX());
+	float c = a - b;
+	DrawFormatString(0, 80, GetColor(255, 0, 0), "%f", c);
+	if (c < 0) return true;
+}
+
+void PatrolEnemy::OnCollision()
+{
+	playerInRange = true;
+}
+
+
+Line::Line(float x, float y, float angle)
+{
+
+	this->x = x;
+	this->y = y;
+	
+	this->angle = angle;
+
+	this->x1 = x + cos(angle * PI / 180) * 500;
+	this->y1 = y + sin(angle * PI / 180) * 500;
+
+}
+
+void Line::Draw()
+{
+
+
+	float cam = Camera::GetX();
+	float camY = Camera::GetY();
+
+	DrawLineAA(x - cam, y - camY, x1 - cam, y1 - camY, GetColor(255, 255, 255));
+
+}
+
+void Line::Update()
+{
+
+	x1 = x + cos(angle * PI / 180) * 500;
+	y1 = y + sin(angle * PI / 180) * 500;
+
+}
+
+void Line::SetAngle(float angle)
+{
+
+	this->angle = angle;
+
+}

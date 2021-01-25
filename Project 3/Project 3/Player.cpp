@@ -23,9 +23,9 @@ void Player::Update()
 	for(int i = 0; i < objects.size(); i++) {
 		CollisionProcess(objects[i]);
 	}
-	for (int i = 0; i < enemies.size(); i++) {
+	/*for (int i = 0; i < enemies.size(); i++) {
 		CollisionProcess(enemies[i]);
-	}
+	}*/
 
 }
 

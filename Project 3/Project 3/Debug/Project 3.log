@@ -1,13 +1,24 @@
 ﻿  Enemy.cpp
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Object.h(21,27): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(104,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(104,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(105,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(131,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(131,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(145,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(145,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Object.h(22,27): warning C4244: 'return': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(109,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(109,25): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(110,69): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(110,53): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(110,36): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(110,20): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(136,44): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(136,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(150,48): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(150,27): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(233,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(233,17): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(238,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(238,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(293,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(294,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(312,9): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(313,9): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(268): warning C4715: 'PatrolEnemy::CheckLine1': 値を返さないコントロール パスがあります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(258): warning C4715: 'PatrolEnemy::CheckPlayer': 値を返さないコントロール パスがあります。
+C:\Users\Celespica\Desktop\Project 3\Project 3\Project 3\Enemy.cpp(277): warning C4715: 'PatrolEnemy::CheckLine2': 値を返さないコントロール パスがあります。
   Project 3.vcxproj -> C:\Users\Celespica\Desktop\Project 3\Project 3\Debug\Project 3.exe

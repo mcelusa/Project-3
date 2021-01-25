@@ -24,11 +24,12 @@ void Scene::Update()
 	player->Update();
 	for (int i = 0; i < enemys.size(); i++) enemys[i]->Update();
 	for (int i = 0; i < objects.size(); i++) objects[i]->Update();
+	for (int i = 0; i < enemys.size(); i++) collision->PlayerToEnemy(player, enemys[i]);
+	
 
 	for (int i = 0; i < enemys.size(); i++) enemys[i]->Draw();
 	for (int i = 0; i < objects.size(); i++) objects[i]->Draw();
 	player->Draw();
-	DrawFormatString(0, 0, GetColor(255, 0, 0), "%f", objects[0]->GetX());
 }
 
 void Scene::Load()
@@ -42,7 +43,10 @@ void Scene::Load()
 	//objects.push_back(new Bomb(100, 400));
 	enemys.push_back(new ExplodingEnemy(2400, 1800));
 	enemys.push_back(new ExplodingEnemy(2000, 1800));
+	enemys.push_back(new PatrolEnemy(2000, 1600));
 	player = new Player(2000, 2000, 30);
+
+	collision = new Collision();
 
 	player->LoadObjects(objects);
 	player->LoadEnemies(enemys);
